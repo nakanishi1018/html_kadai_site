@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+#wrap{
+   margin: 0auto;
+   width: 960px;
+}
+
+p{
+   color: black;
+}
+
+.yellow{
+    color: yellow;
+}
+
+header{
+    display: flex;
+       
+}
+
+.menu{
+    margin: 0 0 0 auto;
+    position: fixed;/*fixedを設定して固定*/
+    z-index: 999;/*最前面へ*/
+    padding-left: 780px;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.356); 
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+/* ↓ 項目が横並びになる */
+ul{
+    display: flex;
+    list-style: none;
+    margin: 5px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-right: 35px;
+}
+
+/* header */
+
+.mainvisual {
+   position: relative;
+}
+.mainvisual img {
+    width: 100%;
+}
+.mainvisual p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    color: white;
+}
+
+.mainvisual-text{
+    text-align: center;
+}
+
+.about-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: yellow;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.about-text {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.parent2 {
+    position: relative;
+    height: 200px;
+}
+.item2 {
+    position: absolute;
+    height: 100px;
+    width: 670px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.subvisual{
+    width: 100%;
+}
+
+.section-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.section-text {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.about_02{
+    display: flex;
+    background-color: #fafafa;
+}
+
+.about_02text{
+    width: 100%;
+    margin: 100px;
+}
+
+.about02-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.about02-text {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.course_02{
+    display: flex;
+    background-color: #fafafa;
+}
+
+.course_02text{
+    width: 100%;
+    margin: 100px;
+}
+
+.course02-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.course02-text {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.course_03{
+    display: flex;
+    background-color: #fafafa;
+}
+
+.course_03text{
+    width: 100%;
+    margin: 100px;
+}
+
+.course03-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.course03-text {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.news_01{
+    display: flex;
+    margin-left: 150px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.news-day{
+    margin-top: 10px;
+}
+
+.news-text{
+    margin-top: 10px;
+}
+
+HTML SCSSResult Skip Results Iframe
+EDIT ON
+@import "compass/css3";
+
+body {
+    background: #292929;
+    padding-left: 30px;
+}
+.row {
+    float: left;
+    width: 100%;
+    padding-left: 470px;
+}
+.row .block {
+    float: left;
+    width: 25%;
+    height: 150px;
+}
+.hovicon {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 90px;
+    cursor: pointer;
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    color: #fff;
+}
+.hovicon.small {
+    font-size: 20px;
+    line-height:45px;
+    width:45px;
+    height:45px;
+    margin:7px;
+}
+.hovicon.mini {
+    font-size: 15px;
+    line-height:32px;
+    width:30px;
+    height:30px;
+    margin:7px;
+}
+.hovicon.auto-width {
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.hovicon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hovicon.effect-2 {
+    color: #eea303;
+    box-shadow: 0 0 0 3px rgb(145, 143, 143);
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.hovicon.effect-2:after {
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+    z-index: -1;
+    background: #fff;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+/* Effect 2a */
+ .hovicon.effect-2.sub-a:hover, .hovicon.effect-2.sub-a:hover i {
+    color: #eea303;
+}
+.hovicon.effect-2.sub-a:hover:after {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+}
+
+.map{
+    background-color: #fafafa;
+    margin-top: 150px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+}
+
+.map-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.map-text {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.iframe-wrap{
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+}
+
+.iframe-wrap iframe{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.map-text2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 2.0;
+    margin-top: 30px;
+}
+
+.form-inner{
+    margin-bottom: 40px;
+    padding-left: 300px;
+    padding-bottom: 20px;
+    background-color: #fafafa;
+}
+
+.form-title{
+    width: 130px;
+    padding-top: 30px;
+    margin-right: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.form-parts{
+    width: 450px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.form-item{
+    display: block;
+    text-align: center;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+.checkbox03 {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px;
+    position: relative;
+    width: auto;
+}
+.checkbox03::before {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 5px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+}
+.checkbox03::after {
+    border-right: 6px solid #fedd1e;
+    border-bottom: 3px solid #fedd1e;
+    content: '';
+    display: block;
+    height: 20px;
+    left: 7px;
+    margin-top: -16px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg) translate3d(0,2px,0) scale3d(.7,.7,1);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    width: 9px;
+}
+input[type=checkbox]:checked + .checkbox03::before {
+    border-color: #666;
+}
+input[type=checkbox]:checked + .checkbox03::after {
+    opacity: 1;
+    transform: rotate(45deg) scale3d(1,1,1);
+}
+
+.choose{
+    width: 450px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.send{
+    padding-bottom: 50px;
+}
+
+.footer-text{
+    
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #707070;
+    color: #fafafa;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
