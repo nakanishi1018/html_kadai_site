@@ -210,7 +210,7 @@ a{
 
 HTML SCSSResult Skip Results Iframe
 EDIT ON
-@import "compass/css3";
+
 
 body {
     background: #292929;
@@ -272,7 +272,6 @@ body {
     box-sizing: content-box;
 }
 .hovicon:before {
-    speak: none;
     font-size: 48px;
     line-height: 90px;
     font-style: normal;
